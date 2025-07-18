@@ -148,3 +148,16 @@ Your Open House CRM is now **~85% production-ready** with 45+ API endpoints, com
 For detailed feature documentation, see:
 - [Webhook System Documentation](./WEBHOOK_README.md)
 - [Development Instructions](./.copilot-instructions.md)
+
+## Documentation & Resources
+
+### Development Documentation
+- **[Development History](./docs/development/)** - Implementation summaries, fixes, and enhancement logs
+- **[Setup Guides](./docs/setup-guides/)** - Installation and configuration instructions
+- **[Test Data](./docs/test-data/)** - Sample data and test reports for development
+
+### Development Scripts
+- **[Development Scripts](./scripts/development/)** - Automation scripts for local development
+  - `START_DEV.bat` - Main development environment launcher
+  - Various start scripts for server/client components
+  - Database and dependency management utilities
