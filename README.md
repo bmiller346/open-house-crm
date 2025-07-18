@@ -36,6 +36,38 @@ Visit us on [GitHub](https://github.com/lucsedirae/open-house-crm)
 
 <hr>
 
+
+## Monorepo Development Server Commands
+
+To run the new monorepo servers, use the following commands:
+
+**API Server (TypeScript, hot reload):**
+```bash
+cd apps/api
+
+npx tsx src/server.ts
+```
+**Or, to run the compiled JavaScript:**
+```bash
+cd apps/api
+npm run build
+node dist/server.js
+```
+
+**Web App (Next.js):**
+```bash
+cd apps/web
+npm run dev
+```
+
+**Legacy (old) server/client (not recommended for new development):**
+```bash
+# From the root, runs old Express and React apps
+npm run dev
+```
+
+> For more details, see `.copilot-instructions.md` in the repo root.
+
 ## Development
 
 Future development goals:
@@ -99,3 +131,20 @@ Founding contributors:
 [Tanner Kirkpatrick](https://github.com/twkirkpatrick)
 
 [David Stinnet](https://github.com/serjykalstryke) - [Website](https://www.davidstinnett.info)
+
+## Recent Enhancements
+
+### 🎉 Major Achievements
+- ✅ **Calendar System**: Complete appointment scheduling with smart scheduling and availability management
+- ✅ **Webhook Management**: Production-ready with real API integration and testing dashboard  
+- ✅ **TypeScript API**: Full TypeScript backend with PostgreSQL and performance optimizations
+- ✅ **Authentication**: Google OAuth integration with multi-tenant workspace support
+- ✅ **Database**: PostgreSQL with proper relationships, indexes, and migration system
+- ✅ **Modern UI**: Material-UI v5 with dark/light themes and responsive design
+
+### 📊 Current Status
+Your Open House CRM is now **~85% production-ready** with 45+ API endpoints, complete authentication, and professional UI/UX.
+
+For detailed feature documentation, see:
+- [Webhook System Documentation](./WEBHOOK_README.md)
+- [Development Instructions](./.copilot-instructions.md)

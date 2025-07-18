@@ -1,0 +1,60 @@
+{
+  "name": "@open-house-crm/web",
+  "version": "1.0.0",
+  "description": "Next-gen Real Estate CRM Web Application",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@emotion/cache": "^11.11.0",
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@hookform/resolvers": "^3.3.2",
+    "@mui/icons-material": "^5.15.0",
+    "@mui/lab": "^5.0.0-alpha.158",
+    "@mui/material": "^5.15.0",
+    "@mui/x-date-pickers": "^7.0.0",
+    "@tanstack/react-query": "^5.13.4",
+    "@tanstack/react-query-devtools": "^5.13.5",
+    "chart.js": "^4.5.0",
+    "clsx": "^2.1.1",
+    "date-fns": "^2.30.0",
+    "next": "^15.3.5",
+    "react": "^18.2.0",
+    "react-beautiful-dnd": "^13.1.1",
+    "react-chartjs-2": "^5.3.0",
+    "react-dom": "^18.2.0",
+    "react-dropzone": "^14.2.3",
+    "react-hook-form": "^7.48.2",
+    "react-hot-toast": "^2.4.1",
+    "recharts": "^2.15.4",
+    "tailwind-merge": "^3.3.1",
+    "yup": "^1.4.0",
+    "zustand": "^4.4.7"
+  },
+  "devDependencies": {
+    "@types/chart.js": "^2.9.41",
+    "@types/node": "24.0.14",
+    "@types/react": "^18.2.42",
+    "@types/react-beautiful-dnd": "^13.1.6",
+    "@types/react-dom": "^18.2.17",
+    "@typescript-eslint/eslint-plugin": "^6.14.0",
+    "@typescript-eslint/parser": "^6.14.0",
+    "eslint": "^8.55.0",
+    "eslint-config-next": "^15.3.5",
+    "typescript": "^5.3.2"
+  },
+  "keywords": [
+    "real-estate",
+    "crm",
+    "web-app",
+    "next.js",
+    "typescript",
+    "material-ui"
+  ]
+}

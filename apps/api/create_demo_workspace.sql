@@ -1,0 +1,2 @@
+-- Demo workspace already exists with ID: 9e40238f-af1c-4ec0-bd4f-f7968a694599
+-- No need to create a new one

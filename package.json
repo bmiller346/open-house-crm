@@ -1,19 +1,29 @@
 {
-  "name": "OpenHouseCRM",
+  "name": "open-house-crm",
   "version": "0.2.2",
-  "description": "Open Source Contact Management Platform\u001b[1;5D\u001b[1;5D\u001b[1;5D\u001b[1;5D\u001b[1;5D",
+  "description": "Open Source Contact Management Platform",
   "main": "server.js",
   "engines": {
-    "node": "14.15"
+    "node": "18.0.0"
   },
   "scripts": {
-    "start": "node server.js",
-    "server": "nodemon server.js",
-    "client": "npm start --prefix client",
-    "clientinstall": "npm install --prefix client",
-    "dev": "concurrently \"npm run server\" \"npm run client\"",
-    "prod": "concurrently \"npm run start\" \"npm run client\"",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
+    "dev": "concurrently \"npm run dev:api\" \"npm run dev:web\"",
+    "dev:api": "cd apps/api && npm run dev",
+    "dev:web": "cd apps/web && npm run dev",
+    "build": "npm run build:api && npm run build:web",
+    "build:api": "cd apps/api && npm run build",
+    "build:web": "cd apps/web && npm run build",
+    "start": "concurrently \"npm run start:api\" \"npm run start:web\"",
+    "start:api": "cd apps/api && npm start",
+    "start:web": "cd apps/web && npm start",
+    "install:all": "npm install && cd apps/api && npm install && cd ../web && npm install",
+    "clean": "rm -rf node_modules apps/api/node_modules apps/web/node_modules",
+    "clean:win": "rmdir /s /q node_modules && rmdir /s /q apps\\api\\node_modules && rmdir /s /q apps\\web\\node_modules",
+    "lint": "cd apps/web && npm run lint",
+    "test": "cd apps/api && npm test",
+    "typecheck": "npm run typecheck:api && npm run typecheck:web",
+    "typecheck:api": "cd apps/api && npm run typecheck",
+    "typecheck:web": "cd apps/web && npm run typecheck"
   },
   "author": "LucSedirae",
   "license": "SEE LICENSE IN LICENSE",
@@ -22,7 +32,7 @@
     "@material-ui/core": "^4.11.2",
     "@material-ui/icons": "^4.11.2",
     "@material-ui/pickers": "^3.2.10",
-    "axios": "^0.21.1",
+    "axios": "^1.10.0",
     "bcryptjs": "^2.4.3",
     "chart.js": "^2.9.4",
     "config": "^3.3.3",
@@ -31,15 +41,16 @@
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "express-validator": "^6.8.1",
-    "jsonwebtoken": "^8.5.1",
+    "jsonwebtoken": "^9.0.2",
+    "lucide-react": "^0.525.0",
     "moment": "^2.29.1",
-    "mongoose": "^5.11.15",
+    "mongoose": "^8.16.4",
     "react-chartjs-2": "^2.11.1",
     "react-moment": "^1.1.1",
     "react-router-dom": "^5.2.0"
   },
   "devDependencies": {
-    "concurrently": "^5.3.0",
-    "nodemon": "^2.0.6"
+    "concurrently": "^8.2.2",
+    "nodemon": "^3.0.2"
   }
 }

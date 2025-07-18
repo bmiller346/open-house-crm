@@ -1,0 +1,9 @@
+{
+  "firstName": "John",
+  "lastName": "Doe", 
+  "email": "john.doe@example.com",
+  "phone": "5551234567",
+  "companyName": "Test Company",
+  "type": "lead",
+  "status": "active"
+}
