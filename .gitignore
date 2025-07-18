@@ -85,3 +85,9 @@ docker-compose.yml
 pnpm-workspace.yaml
 tsconfig.base.json
 turbo.json
+
+# Environment files with actual values
+.env
+
+# Legacy archive (backup of old code)
+legacy-archive/
