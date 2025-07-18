@@ -44,8 +44,44 @@ apps/webhook_api_summary.md
 /apps/api/dist/
 /apps/web/.next/
 /apps/web/out/
+/.next/
 
 # Debug and log files
 /apps/api/debug.log
 /apps/web/debug.log
 *.log
+
+# Development/temp documentation files
+**/WEBHOOK_IMPLEMENTATION_COMPLETE.md
+**/WEBHOOK_SYSTEM_SETUP.md
+**/WEBHOOK_SYSTEM.md
+apps/webhook_api_summary.md
+AI_LEAD_SCORING_COMPLETE.md
+CALENDAR_IMPLEMENTATION_SUMMARY.md
+ENHANCEMENTS.md
+IMPLEMENTATION_COMPLETE.md
+INFINITE_LOOP_FIX.md
+OAUTH_GMAIL_COMPLETE.md
+PRODUCTION_READINESS_CHECKLIST.md
+RUNTIME_FIXES_SUMMARY.md
+SETUP.md
+STRUCTURE_ANALYSIS.md
+UNIFICATION_SUMMARY.md
+UNIFIED_STRATEGY.md
+
+# Development scripts and temporary files
+*.bat
+*.ps1
+install_deps.js
+npm-wrapper.ps1
+core.tgz
+npm-temp.tgz
+demo-contact.json
+webhook-test-report.json
+reset-postgres-password.ps1
+
+# Development configurations
+docker-compose.yml
+pnpm-workspace.yaml
+tsconfig.base.json
+turbo.json
