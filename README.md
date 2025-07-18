@@ -10,9 +10,11 @@
 ![header image](client/public/img/readme-header.PNG)
 ## Description
 
-An open source CRM platform for real estate professionals
+A next-generation, enterprise-ready CRM platform for real estate professionals. Built with modern TypeScript, this monorepo architecture provides scalable solutions for contact management, transaction tracking, appointment scheduling, and business analytics.
 
-Visit us on [GitHub](https://github.com/lucsedirae/open-house-crm)
+**Completely rebuilt and modernized from the original open source foundation.**
+
+Current Repository: [GitHub](https://github.com/bmiller346/open-house-crm)
 
 <hr>
 
@@ -70,37 +72,90 @@ npm run dev
 
 ## Development
 
-Future development goals:
+**Current Architecture:**
+- **Modern TypeScript Monorepo** with Turbo build system
+- **Multi-tenant SaaS architecture** with workspace isolation
+- **Enterprise authentication** (OAuth, RBAC permissions)
+- **Production-ready APIs** with comprehensive Swagger documentation
+- **Real-time features** with webhook system and notifications
+- **Mobile-first design** with React Native companion app
 
-- Implementation of progressive web application tools
-- Conversion to an npm package to allow developers easy access to components and tools for building custom implementations of the application
-- Migrate from express to php back end
-- Calendar module
-- Dark mode option in my account settings page
+**Future Development Goals:**
+- Advanced AI lead scoring and predictive analytics
+- Enhanced calendar integrations (Outlook, Calendar, etc.)
+- Advanced reporting and business intelligence dashboards
+- White-label deployment options for agencies
+- Advanced workflow automation and triggers
 
-**Developers wanted!** Open house is open to developers of all skill levels. It was created as a final project for a web development boot camp and we welcome students and self-studiers to get involved. See the [contributions](#contributions) section or [get in touch](#questions) to learn how.
+**Developers Welcome!** This is a modern, enterprise-grade platform perfect for developers wanting to work with cutting-edge technologies. See the [contributions](#contributions) section to get involved.
 
 ## Installation
 
-Clone directory and run `npm i` in the root directory. Then navigate to the /client subdirectory and run `npm i` again. See package.json in root directory for development runtime and build scripts.
+**Quick Start:**
+```bash
+# Clone the repository
+git clone https://github.com/bmiller346/open-house-crm.git
+cd open-house-crm
+
+# Install all dependencies
+npm run install:all
+
+# Set up environment variables
+cp .env.template .env
+# Edit .env with your database and OAuth credentials
+
+# Start development servers
+npm run dev
+```
+
+**Requirements:**
+- Node.js 18.0.0+
+- PostgreSQL 14+
+- Google OAuth credentials (for authentication)
+- Optional: Redis (for session management)
+
+See the [Setup Guide](./docs/setup-guides/SETUP.md) for detailed installation instructions.
 
 ## Features
 
-Manages contacts in a clean, easily searchable UI
+**🎯 Advanced Contact & Lead Management**
+- AI-powered lead scoring and recommendations
+- Duplicate detection and contact merging
+- Advanced search and filtering capabilities
+- Contact relationship mapping and history tracking
 
 ![Contacts animation](/client/public/img/contacts.gif)
 
-Charts business analytics from your transaction history
+**📊 Business Intelligence & Analytics**
+- Real-time dashboard with key performance indicators
+- Revenue forecasting and trend analysis
+- Custom report generation and data visualization
+- Pipeline performance tracking and optimization
 
 ![Charts animation](/client/public/img/charts.gif)
 
-Transaction and inventory databases for managing your business and sales tools
+**💼 Transaction & Inventory Management**
+- Complete transaction lifecycle tracking
+- Property inventory management with market data integration
+- Document templates and digital signature workflows
+- Commission tracking and financial reporting
 
 ![Charts animation](/client/public/img/trx-inv.gif)
 
-Social forum to share vendor contact information, advertise listings, share articles and more
+**🤝 Agent Collaboration Platform**
+- Professional forum for vendor recommendations
+- Listing syndication and co-marketing tools
+- Knowledge base and resource sharing
+- Team performance analytics
 
 ![Charts animation](/client/public/img/forum.gif)
+
+**🔗 Enterprise Integrations**
+- Webhook system for third-party integrations
+- OAuth authentication (Google, LinkedIn)
+- API-first architecture with comprehensive documentation
+- Multi-tenant workspace management
+- Role-based access control (RBAC)
 
 ## License
 
@@ -108,29 +163,53 @@ Created under the GNU GPLv3 license. See LICENSE.txt for more information.
 
 ## Contributions
 
-- Visit our [issues page](https://github.com/lucsedirae/open-house-crm/issues) or [projects page](https://github.com/lucsedirae/open-house-crm/projects) to see what needs work.
+- Visit our [issues page](https://github.com/bmiller346/open-house-crm/issues) or [projects page](https://github.com/bmiller346/open-house-crm/projects) to see what needs work.
 - Submit a pull request with detailed description of added code or edits.
+- Review our [Development Documentation](./docs/development/) for implementation guidelines.
+
+**Code Standards:**
+- TypeScript with strict mode
+- Comprehensive testing required
+- API-first approach with Swagger documentation
+- Follow established monorepo patterns
 
 ## Testing
 
-No testing library currently installed
+**Comprehensive Test Suite:**
+- Unit tests with Jest and Supertest
+- Integration tests for API endpoints
+- End-to-end testing with Playwright
+- Automated testing in CI/CD pipeline
+
+```bash
+# Run all tests
+npm test
+
+# Run API tests
+cd apps/api && npm test
+
+# Run web tests  
+cd apps/web && npm test
+```
 
 ## Questions
 
-Have questions on this application?:<br>
-Email: jondeavers@gmail.com <br>
+Have questions about this implementation?  
+**Email**: [your-email@example.com]  
+**GitHub Issues**: [https://github.com/bmiller346/open-house-crm/issues](https://github.com/bmiller346/open-house-crm/issues)
 
 ## Contact
 
-Founding contributors:
+**Current Maintainer:**
+[Engin Miller](https://github.com/bmiller346) - Complete TypeScript rebuild and modernization
 
-[Jon Deavers](https://github.com/lucsedirae) - [Website](https://jondeavers.net)
+**Original Open Source Contributors** (foundational concept):
+- [Jon Deavers](https://github.com/lucsedirae) - [Website](https://jondeavers.net)
+- [Melanie Hall](https://github.com/mhall313)
+- [Tanner Kirkpatrick](https://github.com/twkirkpatrick)
+- [David Stinnet](https://github.com/serjykalstryke) - [Website](https://www.davidstinnett.info)
 
-[Melanie Hall](https://github.com/mhall313)
-
-[Tanner Kirkpatrick](https://github.com/twkirkpatrick)
-
-[David Stinnet](https://github.com/serjykalstryke) - [Website](https://www.davidstinnett.info)
+*This current implementation is a complete rewrite using modern TypeScript, PostgreSQL, and enterprise architecture. While inspired by the original open source concept, no original code remains.*
 
 ## Recent Enhancements
 

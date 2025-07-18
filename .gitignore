@@ -51,6 +51,9 @@ apps/webhook_api_summary.md
 /apps/web/debug.log
 *.log
 
+# Legacy archive
+legacy-archive/
+
 # Development/temp documentation files (root level only) - now archived in docs/
 # (These exclusions can be removed as files are now organized)
 
